@@ -1,0 +1,17 @@
+-- CREATE USER areef WITH PASSWORD 'password' CREATEDB;
+-- psql -U postgres -d Postgres
+-- CREATE DATABASE nodelogin;
+
+-- postgres=> CREATE DATABASE nodelogin;
+-- CREATE DATABASE
+-- postgres=> \c nodelogin
+-- psql (14.13 (Homebrew), server 16.4)
+-- WARNING: psql major version 14, server major version 16.
+--          Some psql features might not work.
+-- You are now connected to database "nodelogin" as user "areef".
+-- nodelogin=> CREATE TABLE users
+-- nodelogin-> (id BIGSERIAL PRIMARY KEY NOT NULL, 
+-- nodelogin(> name VARCHAR(200) NOT NULL,
+-- nodelogin(> email VARCHAR(200) NOT NULL,
+-- nodelogin(> password VARCHAR(200) NOT NULL,
+-- nodelogin(> UNIQUE (email));
